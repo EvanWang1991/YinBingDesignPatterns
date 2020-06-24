@@ -9,6 +9,9 @@ public class HungrySingletonTest {
     }
 }
 
+/**
+ * 利用类加载机制来保证线程安全
+ */
 class HungrySingleton{
     private static HungrySingleton instance = new HungrySingleton();
 
