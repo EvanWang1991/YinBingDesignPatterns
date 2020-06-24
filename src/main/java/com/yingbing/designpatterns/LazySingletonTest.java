@@ -18,6 +18,9 @@ public class LazySingletonTest {
 
 class LazySingleton{
     //防止指令重排
+    // 1 开辟空间           1 开辟空间
+    // 2 初始化     ----->  2 引用赋值
+    // 3 引用赋值           3  初始化
     private static volatile LazySingleton instance;
     private LazySingleton(){
 
