@@ -17,19 +17,20 @@ public class LazySingletonTest {
 }
 
 class LazySingleton{
-    private static LazySingleton instance;
+    //防止指令重排
+    private static volatile LazySingleton instance;
     private LazySingleton(){
 
     }
 
-    public synchronized static LazySingleton getInstance() {
+    public static LazySingleton getInstance() {
         if(instance == null){
-            try {
-                Thread.sleep(200);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+            synchronized (LazySingleton.class){
+                //double check
+                if(instance == null){
+                    instance = new LazySingleton();
+                }
             }
-            instance = new LazySingleton();
         }
         return instance;
     }
