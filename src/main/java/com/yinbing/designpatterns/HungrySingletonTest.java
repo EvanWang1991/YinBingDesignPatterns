@@ -1,4 +1,4 @@
-package com.yingbing.designpatterns;
+package com.yinbing.designpatterns;
 
 public class HungrySingletonTest {
     public static void main(String[] args) {

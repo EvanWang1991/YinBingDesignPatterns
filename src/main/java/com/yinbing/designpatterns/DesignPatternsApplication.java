@@ -1,4 +1,4 @@
-package com.yingbing.designpatterns;
+package com.yinbing.designpatterns;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

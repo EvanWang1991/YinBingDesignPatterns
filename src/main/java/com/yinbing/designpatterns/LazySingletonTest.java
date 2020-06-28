@@ -1,4 +1,4 @@
-package com.yingbing.designpatterns;
+package com.yinbing.designpatterns;
 
 public class LazySingletonTest {
     public static void main(String[] args) {

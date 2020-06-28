@@ -1,4 +1,4 @@
-package com.yingbing.designpatterns;
+package com.yinbing.designpatterns;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
