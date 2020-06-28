@@ -1,4 +1,4 @@
-# YingBingDesignPatterns
+# YinBingDesignPatterns
 #### Singleton 
 - [x] [Lazy Singleton](/com/yinbing/designpatterns/LazySingletonTest.java)
 - [x] [Hungry Singleton](/com/yinbing/designpatterns/HungrySingletonTest.java)
