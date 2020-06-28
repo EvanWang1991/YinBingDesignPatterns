@@ -1,4 +1,4 @@
-package com.yinbing.designpatterns;
+package com.yinbing.designpatterns.singleton;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
