@@ -3,6 +3,11 @@ package com.yinbing.designpatterns;
 /**
  * 将一个复杂对象的创建与他的表示分离，使得同样的构建过程可以创建
  * 不同的表示
+ *
+ * Spring 源码中的应用
+ *
+ * org.springframework.web.servlet.mvc.method.RequestMappingInfo
+ * org.springframework.beans.factory.support.BeanDefinitionBuilder
  */
 public class BuilderTest {
 

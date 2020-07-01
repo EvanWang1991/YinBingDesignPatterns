@@ -1,4 +1,4 @@
-# YinBingDesignPatterns
+# 饮冰设计模式
 - [x] [Lazy Singleton](/com/yinbing/designpatterns/singleton/LazySingletonTest.java)
 - [x] [Hungry Singleton](/com/yinbing/designpatterns/singleton/HungrySingletonTest.java)
 - [x] [InnerClass Singleton](/com/yinbing/designpatterns/singleton/InnerClassSingletonTest.java)
