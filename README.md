@@ -5,4 +5,5 @@
 - [x] [Enum Singleton](/com/yinbing/designpatterns/singleton/EnumSingleton.java)
 ---
 - [x] [Factory Method](/com/yinbing/designpatterns/FactoryMethod.java)
+- [x] [Abstract Factory](/com/yinbing/designpatterns/AbstractFactoryTest.java)
 - [x] [Builder](/com/yinbing/designpatterns/BuilderTest.java)
