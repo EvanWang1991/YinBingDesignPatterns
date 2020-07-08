@@ -25,6 +25,11 @@ package com.yinbing.designpatterns;
  * 能会比较低，当然现在 JVM 已经优化的很好了，但是对于有些对性能要求特别
  * 高的场景，还是要注意的。
  *
+ * 在使用 Spring 的时候都有用过 @scope("prototype")，由于 Spring
+ * 中默认 Bean 是单例模式的，如果我们需要某个 Bean 在每次请求的时候都创建
+ * 一个新的，而不是只有一个，那就需要将这个 Bean 的模式改成原型模式，这样
+ * 在每次使用的使用就会创建一个新的，使用结束后就会销毁。
+ *
  * @Auther: Jixiang.Wang
  * 峥嵘岁月 何惧风流
  */
