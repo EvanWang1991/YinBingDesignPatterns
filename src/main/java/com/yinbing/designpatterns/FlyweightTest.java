@@ -1,5 +1,8 @@
 package com.yinbing.designpatterns;
 
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 /**
  * 享元模式
  * 首先常规操作，我们先看一下什么是享元模式，维基百科解释：享元模式（英语：
@@ -27,5 +30,46 @@ package com.yinbing.designpatterns;
  * 峥嵘岁月 何惧风流
  */
 public class FlyweightTest {
+    public static void main(String[] args) {
+        BookFactory.getBook("三国演义","罗贯中");
+        BookFactory.getBook("水浒传","施耐庵");
+        BookFactory.getBook("三国演义","罗贯中");
+    }
+}
 
+class BookFactory{
+    private static Map<String, Book> bookPool = new ConcurrentHashMap<>();
+
+    public static Book getBook(String name, String auther){
+        Book result;
+        result = bookPool.get(name);
+        if(result == null){
+            result = new Book(name, auther);
+            bookPool.put(name, result);
+        }
+        return result;
+    }
+}
+
+class Book{
+    private final String bookName;
+    private final String author;
+
+    public Book(String bookName, String author) {
+        this.bookName = bookName;
+        this.author = author;
+        downloadBook(bookName);
+    }
+
+    private void downloadBook(String bookName){
+        System.out.println("下载新书："+ bookName);
+    }
+
+    public String getBookName() {
+        return bookName;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
 }
