@@ -7,4 +7,5 @@
 - [x] [Factory Method](/com/yinbing/designpatterns/FactoryMethod.java)
 - [x] [Abstract Factory](/com/yinbing/designpatterns/AbstractFactoryTest.java)
 - [x] [Builder](/com/yinbing/designpatterns/BuilderTest.java)
-- [x] [PrototypeTest](/com/yinbing/designpatterns/PrototypeTest.java)
+- [x] [Prototype](/com/yinbing/designpatterns/PrototypeTest.java)
+- [x] [Flyweight](/com/yinbing/designpatterns/FlyweightTest.java)
